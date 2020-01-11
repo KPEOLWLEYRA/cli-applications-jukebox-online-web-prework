@@ -52,7 +52,7 @@ def play(array)
     song_number = array.index(i) + 1 
     if song_request == i 
       puts "Playing #{song_request}."
-    elsif song_request.to_s == song_number.to_s 
+    elsif song_request == song_number.to_s 
       puts "Playing #{song_request}"
     else
       puts "Invalid input, please try again"
