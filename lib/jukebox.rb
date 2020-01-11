@@ -38,4 +38,10 @@ def list(array)
   array
 end
 
-list(songs)
+def play(array)
+  puts "Please enter a song name or number: "
+  song_request = gets.strip
+  array.map do |i|
+    if song_request == i || 
+
+#list(songs)
