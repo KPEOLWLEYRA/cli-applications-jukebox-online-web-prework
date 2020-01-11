@@ -74,3 +74,6 @@ def run
   elsif command == "play"
     play(songs)
   else 
+    puts "not a valid command"
+  end 
+end 
