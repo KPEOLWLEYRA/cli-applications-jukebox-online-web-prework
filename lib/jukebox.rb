@@ -44,11 +44,12 @@ def list(array)
     puts "#{num}. #{i}"
   end
 end
-# def play(array)
-#   puts "Please enter a song name or number: "
-#   song_request = gets.strip
-#   array.map do |i|
-#     song_number = i.index + 1 
-#     if song_request == i || i.index
 
-list(songs)
+def play(array)
+  puts "Please enter a song name or number: "
+  song_request = gets.strip
+  array.map do |i|
+    song_number = array.index(i) 1 
+    if song_request == i || i.index
+
+#list(songs)
