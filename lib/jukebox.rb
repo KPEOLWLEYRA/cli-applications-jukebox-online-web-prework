@@ -38,6 +38,12 @@ end
 #   array
 # end
 
+def list(array)
+  array.map do |i|
+    num = i.index + 1 
+    puts "#{num}. #{i}"
+  end
+end
 # def play(array)
 #   puts "Please enter a song name or number: "
 #   song_request = gets.strip
