@@ -50,11 +50,11 @@ def play(array)
   song_request = gets.strip
   if array.include?(song_request)
     puts "Playing #{song_request}"
-  elsif song_request == 
-    puts "Playing #{song_request}"
-    else
-      puts "Invalid input, please try again"
-    end
+  elsif song_request.include?(1..array.length)
+    index_of_song = array.index(song_request) - 1 
+    puts "Playing #{array[index_of_song]}"
+  else
+    puts "Invalid input, please try again"
   end
 end
 
