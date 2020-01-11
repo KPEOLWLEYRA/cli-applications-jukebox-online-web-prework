@@ -50,7 +50,7 @@ def play(array)
   song_request = gets.strip
   if array.include?(song_request)
     puts "Playing #{song_request}"
-  elsif song_request == (1..9)
+  elsif (1..9).include?(song_request)
     index_of_song = (song_request.to_i - 1)
     puts "Playing #{array[index_of_song]}"
   else
