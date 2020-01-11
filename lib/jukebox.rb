@@ -30,8 +30,8 @@ def help
 end
 
 def list(array)
+  num = 1
   array.map do |i| 
-    num = 1
     puts "#{num}. #{i}"
     num += 1
   end
