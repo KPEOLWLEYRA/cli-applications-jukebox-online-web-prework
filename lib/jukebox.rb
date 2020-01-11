@@ -50,7 +50,7 @@ def play(array)
   song_request = gets.strip
   array.map do |i|
     song_number = array.index(i) + 1 
-    if song_request == i || i.index
+    if song_request == i || song_number
       puts "Playing #{i}."
     else
       puts "Invalid input, please try again"
