@@ -29,19 +29,20 @@ def help
   puts "- exit : exits this program"
 end
 
-def list(array)
-  num = 1
-  array.map do |i| 
-    puts "#{num}. #{i}"
-    num += 1
-  end
-  array
-end
+# def list(array)
+#   num = 1
+#   array.map do |i| 
+#     puts "#{num}. #{i}"
+#     num += 1
+#   end
+#   array
+# end
 
-def play(array)
-  puts "Please enter a song name or number: "
-  song_request = gets.strip
-  array.map do |i|
-    if song_request == i || 
+# def play(array)
+#   puts "Please enter a song name or number: "
+#   song_request = gets.strip
+#   array.map do |i|
+#     song_number = i.index + 1 
+#     if song_request == i || i.index
 
-#list(songs)
+#ist(songs)
