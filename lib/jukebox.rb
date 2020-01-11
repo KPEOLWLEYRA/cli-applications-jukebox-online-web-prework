@@ -51,7 +51,7 @@ def play(array)
   if array.include?(song_request)
     puts "Playing #{song_request}"
   elsif song_request == (1..9)
-    index_of_song = array.index(song_request) - 1 
+    index_of_song = (song_request.to_i - 1)
     puts "Playing #{array[index_of_song]}"
   else
     puts "Invalid input, please try again"
