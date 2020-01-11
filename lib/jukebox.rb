@@ -28,3 +28,13 @@ def help
   puts "- play : lets yu chose a song to play"
   puts "- exit : exits this program"
 end
+
+def list(array)
+  array.map do |i| 
+    num = (i+1)
+    puts "#{num}. #{i}"
+  end
+  array
+end
+
+list(songs)
