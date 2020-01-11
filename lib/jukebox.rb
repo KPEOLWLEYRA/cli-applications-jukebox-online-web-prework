@@ -48,8 +48,8 @@ end
 def play(array)
   puts "Please enter a song name or number: "
   song_request = gets.strip
-  array.map do |i|
-    song_number = array.index(i) + 1 
+  if array.include?(song_request)
+   
     if song_request == song_number.to_s 
       puts "Playing #{song_request}"
     elsif song_request == i 
