@@ -24,7 +24,7 @@ songs = [
 def help 
   puts "I accept the following commands:"
   puts "- help : displays this help message"
-  puts "- list : siaplays a list of songs you can play"
+  puts "- list : displays a list of songs you can play"
   puts "- play : lets yu chose a song to play"
   puts "- exit : exits this program"
 end
@@ -62,7 +62,7 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run 
+def run(songs)
   puts "Please enter a command:"
   command = gets.strip 
   if command == "exit"
