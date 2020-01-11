@@ -54,5 +54,11 @@ def play(array)
       puts "Playing #{i}."
     else
       puts "Invalid input, please try again"
+    end
+  end
+end
 
-#list(songs)
+def exit_jukebox
+  puts "Goodbye"
+end
+
