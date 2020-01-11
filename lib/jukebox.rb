@@ -40,7 +40,7 @@ end
 
 def list(array)
   array.map do |i|
-    num = index + 1 
+    num = index(i) + 1 
     puts "#{num}. #{i}"
   end
 end
