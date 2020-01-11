@@ -31,7 +31,7 @@ end
 
 def list(array)
   array.map do |i| 
-    num = (array[i]+1)
+    num = (i + 1)
     puts "#{num}. #{i}"
   end
   array
